@@ -1,0 +1,105 @@
+/*
+flex-direction
+    flex-direction: row | row-reverse | column | column-reverse;    排列方向：左右（行） || 上下（列）
+flex-wrap
+    flex-wrap: nowrap | wrap | wrap-reverse;     是否换行   
+flex-flow
+    flex-flow: <flex-direction> || <flex-wrap>;     排列方向+是否换行
+justify-content
+    justify-content: flex-start | flex-end | center | space-between | space-around;     左右对齐：居左 || 居中 || 居右 || 两端 || 等距
+align-items
+    align-items: flex-start | flex-end | center | baseline | stretch;      单线对齐：居上 || 居中 || 居下 || 基线 || 占满
+align-content
+    align-content: flex-start | flex-end | center | space-between | space-around | stretch;  上下对齐：居上 || 居中 || 居下 || 两端 || 等距 || 占满   
+
+
+order
+    order: <integer>;  default 0     排列顺序：从小到大
+flex-grow
+    flex-grow: <number>;  default 0     放大比例
+flex-shrink
+    flex-shrink: <number>;  default 1    缩小比例
+flex-basis
+    flex-basis: <length> | auto; default auto  多余空间
+flex
+    flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]  放大+缩小+多余
+align-self
+    align-self: auto | flex-start | flex-end | center | baseline | stretch;     个体对齐：居上 || 居中 || 居下 || 基线 || 占满
+*/
+
+body {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1024px;
+    background-color: #f5f5d5;
+    font-family: 'Microsoft Yahei', sans-serif;
+    font-size: 20px;
+    color: #000;
+}
+h1,
+h2 {
+    border-bottom: 1px solid #dbdbdb;
+}
+h3 {
+    margin: 0 auto;
+    border: 2px solid #e8e8e8;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+.box {
+    display: flex;
+    padding: 20px 0;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+}
+.box-item {
+    margin: 0 2px 2px 0;    
+    /* border: 2px solid #f43334; */
+    width: 200px;
+    height: 200px;
+    background-color: #f66d25;
+}
+.box-1{
+    flex-direction: row;    
+}
+.box-2{
+    height: 400px;
+    flex-wrap: wrap-reverse;    
+}
+.box-3{
+    height: 400px;
+    flex-flow: row wrap;    
+}
+.box-4{
+    justify-content: space-between;    
+}
+.box-5{
+    align-items: center;   
+}
+.box-6{
+    height: 600px;
+    flex-flow: row wrap;
+    align-content: space-around;    
+}
+.box-7 .box-item:last-child{
+    order: -1;    
+}
+.box-8 .box-item:last-child{
+    flex-grow: .5;    
+}
+.box-9 .box-item:last-child{
+    flex-shrink: 2;    
+}
+.box-10 .box-item:last-child{
+    flex-basis: 800px;    
+}
+.box-11 .box-item:last-child{
+    flex: 0 2 800px;    
+}
+.box-12 {
+    height: 400px;
+}
+.box-12 .box-item:last-child{
+    align-self: flex-end;    
+}
