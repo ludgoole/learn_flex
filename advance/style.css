@@ -1,0 +1,150 @@
+body {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1024px;
+    background-color: #f5f5d5;
+    font-family: 'Microsoft Yahei', sans-serif;
+    font-size: 20px;
+    color: #000;
+}
+h1,
+h2 {
+    border-bottom: 1px solid #dbdbdb;
+}
+h3 {
+    margin: 0 auto;
+    border: 2px solid #e8e8e8;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+.content {
+    display: flex;
+    justify-content: center;    
+    align-items: center;   
+    border: 6px solid #e8e8e8;  
+    border-radius: 12px;  
+    width: 240px;
+    height: 240px;
+    background-color: #444;
+}
+.box {
+    display: flex;    
+    box-sizing: border-box;
+    border: 5px solid #dbdbdb;
+    border-top-color: #fff;
+    border-bottom-color: #999;    
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: #e8e8e8;
+}
+.column {
+    display: flex;
+    flex-basis: 100%;     
+}
+.box-item {
+    margin: 0 2px 2px 0;    
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #333;
+}
+
+.box-11 {
+    justify-content: center;    
+    align-items: center;  
+}
+.box-11 .box-item {
+    width: 60px;
+    height: 60px;
+}
+
+.box-12 {
+    flex-direction: column;
+    justify-content: space-around;  
+    align-items: center;   
+}
+
+.box-13 {
+    justify-content: space-around;  
+    align-items: center;   
+}
+.box-13 .box-item:first-child {
+    align-self: flex-start;
+}
+.box-13 .box-item:last-child {
+    align-self: flex-end;
+}
+
+.box-14 {
+    flex-wrap: wrap;    
+    align-content: space-around;    
+}
+.box-14 .column{
+    justify-content: space-around;
+}
+
+.box-15 {
+    flex-wrap: wrap;    
+    align-content: space-between;    
+}
+.box-15 .column{
+    justify-content: space-between;
+}
+.box-15 .column:nth-child(2){
+    justify-content: space-around;
+}
+
+.box-16 {
+    flex-wrap: wrap;    
+    align-content: space-between;    
+}
+.box-16 .column{
+    justify-content: space-around;
+}
+
+.grid {
+    display: flex;  
+    box-sizing: border-box;      
+    margin: 20px auto;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+}
+.grid-cell {
+    margin: 0 2px 2px 0;    
+    background-color: #F6C625;
+}
+
+.grid-21 .grid-cell {
+    flex: 1;
+}
+
+.grid-22 .grid-cell:nth-child(1) {
+    flex: 1;
+}
+.grid-22 .grid-cell:nth-child(2) {
+    flex: 2;
+}
+.grid-22 .grid-cell:nth-child(3) {
+    flex: 3;
+}
+
+.grid-23 {
+    height: 800px;
+    flex-wrap: wrap;    
+    align-content: space-between;  
+}
+.grid-23 .u-1of3 .grid-cell{
+    flex: 33.33%;  
+}
+.grid-23 .u-1of4 .grid-cell{
+    flex: 25%;  
+}
+.grid-23 .u-1of6 .grid-cell{
+    flex: 16.66%;  
+}
+.grid-23 .u-1of12 .grid-cell{
+    flex: 1;  
+}
