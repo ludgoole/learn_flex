@@ -22,7 +22,7 @@ flex-shrink
 flex-basis
     flex-basis: <length> | auto; default auto  左右宽度
 flex
-    flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]  放大+缩小+多余 =>所占份额
+    flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]  放大+缩小+多余 =>弹性空间所占份额
 align-self
     align-self: auto | flex-start | flex-end | center | baseline | stretch;     个体对齐：居上 || 居中 || 居下 || 基线 || 占满
 */

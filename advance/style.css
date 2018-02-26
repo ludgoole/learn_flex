@@ -148,3 +148,102 @@ h3 {
 .grid-23 .u-1of12 .grid-cell{
     flex: 1;  
 }
+
+.HolyGrail {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header,
+footer {
+    height: 20vh;
+    background-color: #444;
+}
+.HolyGrail-body {
+    display: flex;
+    height: 60vh;
+}
+.HolyGrail-content {
+    flex: 1;
+}
+.HolyGrail-nav,
+.HolyGrail-aside {
+    flex:0 0 12rem;
+    background-color: #F6C625;
+}
+.HolyGrail-nav {
+    order: -1;
+    background-color: #00ccbb;
+}
+
+@media (max-width: 768px) {
+    .HolyGrail-body {
+      flex-direction: column;
+      flex: 1;
+    }
+    .HolyGrail-nav,
+    .HolyGrail-ads,
+    .HolyGrail-content {
+      flex: 1;
+    }
+  }
+
+.InputAddOn {
+    display: flex;
+    width: 32rem;
+}
+.InputAddOn-field {
+    flex: 1;
+}
+
+.Media {
+    display: flex;
+    width: 48rem;
+}
+.Media-figure {
+    width: 14%;
+    height: 14%;
+    margin-right: 1rem;
+}
+.Media-body {
+    flex: 1;
+    margin-top: -6px;
+}
+
+.site {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.site-content {
+    flex: 1;
+}
+.site header,
+.site footer {
+    height: 10vh;
+}
+
+.wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.flow {
+    padding: 20px;
+    width: 200px;
+    background-color: #fff;
+}
+.flow-parent {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    width: 200px;
+    height: 150px;
+    background-color: #000;
+}
+.flow-child {
+    flex: 0 0 25%;
+    box-sizing: border-box;
+    border: 1px solid firebrick;
+    height: 50px;
+    background-color: #fff;
+}
